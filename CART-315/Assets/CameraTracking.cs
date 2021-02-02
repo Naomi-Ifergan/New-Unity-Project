@@ -1,10 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine; 
+using UnityEngine;
 
-public class BasicScript : MonoBehaviour
+public class CameraTracking : MonoBehaviour
 {
-    public Vector3 rotation = new Vector3(0, 0.1f, 0);
+    public GameObject target;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,7 +14,6 @@ public class BasicScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-       
-        GetComponent<Transform>().Rotate(rotation);
+        
     }
 }
