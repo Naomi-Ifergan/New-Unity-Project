@@ -14,6 +14,7 @@ public class CameraTracking : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        
+       
+        GetComponent<Transform>().LookAt(target.transform);
     }
 }

@@ -14,7 +14,7 @@ public class BasicScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-       
-        GetComponent<Transform>().Rotate(rotation);
+        if (Input.GetKey(KeyCode R))
+            GetComponent<Transform>().Rotate(rotation);
     }
 }
